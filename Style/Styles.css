@@ -48,17 +48,28 @@ body {
 
 .logo {
     color: var(--branco-neve);
-    font-size: 1.8rem;
-    font-weight: 700;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-weight: 700;
 }
 
-.logo-icon {
-    color: var(--ciano-tech);
-    font-size: 2rem;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 6rem;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    font-size: 1.8rem;
 }
 
 .nav-links {
@@ -316,5 +327,13 @@ footer {
 
     .content-section {
         padding: 4rem 2rem;
+    }
+
+    .logo-img {
+        height:3rem ;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
     }
 }
